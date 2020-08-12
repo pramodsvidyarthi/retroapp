@@ -1,3 +1,3 @@
-## ts-fullstack-boilerplate
+## Retroapp
 
-A fullstack boilerplate built with latest technolgies
+Do retro with ease and fun ✨
