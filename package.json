@@ -7,6 +7,7 @@
     "dev": "next",
     "predev": "yarn generate",
     "build": "next build",
+    "prebuild": "yarn generate",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
     "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix",

@@ -12,7 +12,7 @@ generates:
     plugins:
       - typescript
 
-  generated/operations.ts:
+  generated/hooks.ts:
     documents: 'graphql/**/*.graphql'
     preset: import-types
     presetConfig:
@@ -20,16 +20,31 @@ generates:
       importTypesNamespace: SchemaTypes
     plugins:
       - typescript-operations
-
-  generated/hooks.ts:
-    documents: 'graphql/**/*.graphql'
-    preset: import-types
-    presetConfig:
-      typesPath: ./operations
-      importTypesNamespace: OperationTypes
-    plugins:
       - typescript-urql
     config:
       withHOC: false
       withComponent: false
       withHooks: true
+
+
+  # generated/operations.ts:
+  #   documents: 'graphql/**/*.graphql'
+  #   preset: import-types
+  #   presetConfig:
+  #     typesPath: ./schemas
+  #     importTypesNamespace: SchemaTypes
+  #   plugins:
+  #     - typescript-operations
+
+  # generated/hooks.ts:
+  #   documents: 'graphql/**/*.graphql'
+  #   preset: import-types
+  #   presetConfig:
+  #     typesPath: ./operations
+  #     importTypesNamespace: OperationTypes
+  #   plugins:
+  #     - typescript-urql
+  #   config:
+  #     withHOC: false
+  #     withComponent: false
+  #     withHooks: true
