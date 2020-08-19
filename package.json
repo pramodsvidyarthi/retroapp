@@ -10,6 +10,7 @@
     "prebuild": "yarn generate",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
+    "lint": "eslint '*/**/*.{js,ts,tsx}'",
     "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix",
     "clean:generated": "rm -rf generated",
     "generate:prisma": "prisma generate",
