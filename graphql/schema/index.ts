@@ -7,10 +7,10 @@ import * as Post from './post';
 export const schema = makeSchema({
   types: [User, Post],
   outputs: {
-    typegen: path.join(process.cwd(), 'generated', 'nexus-typegen.ts'),
-    schema: path.join(process.cwd(), 'generated', 'schema.graphql'),
+    typegen: path.join(__dirname, '../../generated/nexus-typegen.ts'),
+    schema: path.join(__dirname, '../../generated/schema.graphql'),
   },
-  prettierConfig: path.join(process.cwd(), '.prettierrc'),
+  prettierConfig: path.join(__dirname, '../../.prettierrc'),
 });
 
 export default schema;
