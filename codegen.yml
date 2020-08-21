@@ -1,6 +1,7 @@
 # inspired from https://github.com/danilowoz/ts-gql-jsx/blob/master/codegen.yml
 overwrite: true
-schema: generated/schema.graphql
+schema: ./generated/schema.graphql
+documents: ./graphql/**/*.graphql
 
 hooks:
   afterAllFileWrite:
@@ -8,12 +9,10 @@ hooks:
 
 generates:
   generated/schemas.ts:
-    documents: 'graphql/**/*.graphql'
     plugins:
       - typescript
 
   generated/hooks.ts:
-    documents: 'graphql/**/*.graphql'
     preset: import-types
     presetConfig:
       typesPath: ./schemas
