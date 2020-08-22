@@ -10,7 +10,7 @@
     "dev": "next",
     "predev": "yarn generate",
     "build": "next build",
-    "prebuild": "yarn generate",
+    "postinstall": "yarn generate",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",

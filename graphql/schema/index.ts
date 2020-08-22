@@ -10,7 +10,7 @@ export const schema = makeSchema({
     typegen: path.join(__dirname, '../../generated/nexus-typegen.ts'),
     schema: path.join(__dirname, '../../generated/schema.graphql'),
   },
-  prettierConfig: path.join(__dirname, '../../.prettierrc'),
+  prettierConfig: require('../../.prettierrc.js'),
 });
 
 export default schema;

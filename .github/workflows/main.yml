@@ -22,11 +22,8 @@ jobs:
       - name: Install yarn
         run: npm install -g yarn
 
-      - name: Install dependencies
+      - name: Install dependencies, Post-install generate Schema, Types and Hooks
         run: yarn install --frozen-lockfile
-
-      - name: Generate Schema, Types and Hooks
-        run: yarn generate
 
       - name: Lint
         run: yarn lint
