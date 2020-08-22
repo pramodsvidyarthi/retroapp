@@ -3,6 +3,7 @@ overwrite: true
 schema: generated/schema.graphql
 require:
   - ts-node/register/transpile-only
+  - tsconfig-paths/register
 
 hooks:
   afterAllFileWrite:
