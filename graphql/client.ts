@@ -1,7 +1,7 @@
 import { createClient } from 'urql';
 
 export const client = createClient({
-  url: 'http://localhost:3000/api',
+  url: '/api',
 });
 
 export default client;

@@ -4,7 +4,7 @@ import path from 'path';
 import * as User from './user';
 import * as Post from './post';
 
-export const schema = makeSchema({
+const schema = makeSchema({
   types: [User, Post],
   outputs: {
     typegen: path.join(__dirname, '../../generated/nexus-typegen.ts'),
