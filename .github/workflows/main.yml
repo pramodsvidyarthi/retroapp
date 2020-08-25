@@ -38,4 +38,4 @@ jobs:
         run: yarn build
 
       - name: deploy
-        run: next-on-netlify
+        run: yarn next-on-netlify
