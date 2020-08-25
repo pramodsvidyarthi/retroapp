@@ -31,11 +31,6 @@
     ]
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.17.6",
-    "@graphql-codegen/import-types-preset": "^1.17.6",
-    "@graphql-codegen/typescript": "1.17.6",
-    "@graphql-codegen/typescript-operations": "1.17.6",
-    "@graphql-codegen/typescript-urql": "^1.17.6",
     "@prisma/cli": "^2.3.0",
     "@types/node": "^14.0.26",
     "@types/react": "^16.9.43",
@@ -53,10 +48,15 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.7",
+    "@graphql-codegen/import-types-preset": "^1.17.6",
+    "@graphql-codegen/typescript": "1.17.6",
+    "@graphql-codegen/typescript-operations": "1.17.6",
+    "@graphql-codegen/typescript-urql": "^1.17.6",
+    "@graphql-codegen/cli": "1.17.6",
     "@nexus/schema": "^0.14.0",
     "@prisma/client": "^2.3.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
     "apollo-server-micro": "^2.16.0",
     "graphql": "^15.3.0",
     "next": "^9.4.4",
