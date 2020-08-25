@@ -37,5 +37,5 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: deploy
-        run: yarn next-on-netlify
+      # - name: deploy
+      #   run: yarn next-on-netlify
