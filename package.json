@@ -16,7 +16,8 @@
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only -P nexus.tsconfig.json graphql/schema",
     "generate:gqlcodegen": "graphql-codegen --config codegen.yml",
-    "generate": "yarn run generate:prisma && yarn run generate:nexus && yarn run generate:gqlcodegen"
+    "generate": "yarn run generate:prisma && yarn run generate:nexus && yarn run generate:gqlcodegen",
+    "postbuild": "next-on-netlify"
   },
   "husky": {
     "hooks": {
