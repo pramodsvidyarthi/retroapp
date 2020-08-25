@@ -16,8 +16,7 @@
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only -P nexus.tsconfig.json graphql/schema",
     "generate:gqlcodegen": "graphql-codegen --config codegen.yml",
-    "generate": "yarn run generate:prisma && yarn run generate:nexus && yarn run generate:gqlcodegen",
-    "postbuild": "next-on-netlify"
+    "generate": "yarn run generate:prisma && yarn run generate:nexus && yarn run generate:gqlcodegen"
   },
   "husky": {
     "hooks": {
@@ -50,7 +49,6 @@
     "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "next-on-netlify": "^2.3.2",
     "prettier": "^2.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"

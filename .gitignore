@@ -38,3 +38,8 @@ prisma/.env
 
 # generated
 /generated/
+
+# netlify folders
+/out_publish/
+/out_functions/
+/404.html
